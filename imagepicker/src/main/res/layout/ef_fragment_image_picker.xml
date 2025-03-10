@@ -25,12 +25,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <com.esafirm.imagepicker.view.SnackBarView
+    <com.surelabs.imagepicker.view.SnackBarView
         android:id="@+id/ef_snackbar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/ef_height_snackbar"
-        android:paddingStart="@dimen/ef_spacing_double"
-        android:paddingEnd="@dimen/ef_spacing_double"
         android:layout_alignParentBottom="true"
-        android:background="@color/ef_black_alpha_aa" />
+        android:background="@color/ef_black_alpha_aa"
+        android:paddingStart="@dimen/ef_spacing_double"
+        android:paddingEnd="@dimen/ef_spacing_double" />
 </RelativeLayout>

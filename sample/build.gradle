@@ -15,7 +15,7 @@ android {
         minSdkVersion sdk.minSdk
         targetSdkVersion sdk.targetSdk
 
-        applicationId "com.esafirm.imagepicker.sample"
+        applicationId "com.surelabs.imagepicker.sample"
 
         versionCode 1
         versionName "1.0"
@@ -38,7 +38,7 @@ android {
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
-    namespace 'com.esafirm.sample'
+    namespace 'com.surelabs.sample'
 }
 
 dependencies {

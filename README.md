@@ -39,7 +39,7 @@ And add this to your module's `build.gradle`
 
 ```groovy
 dependencies {
-    implementation 'com.github.esafirm:android-image-picker:x.y.z'
+    implementation 'com.github.surelabs:android-image-picker:x.y.z'
 }
 ```
 

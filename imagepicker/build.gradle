@@ -41,7 +41,7 @@ android {
     }
 
     resourcePrefix "ef_"
-    namespace 'com.esafirm.imagepicker'
+    namespace 'com.surelabs.imagepicker'
 }
 
 tasks.register("sourcesJar", Jar) {
