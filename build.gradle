@@ -4,6 +4,14 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/username/repository-name")
+            credentials {
+                username = project.findProperty("GITHUB_USER") ?: System.getenv("GITHUB_USER")
+                password = project.findProperty("GITHUB_TOKEN") ?: System.getenv("GITHUB_TOKEN")
+            }
+        }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:8.4.2'
@@ -13,9 +21,9 @@ buildscript {
 
 ext {
     sdk = [
-        compileSdk: 35,
-        targetSdk : 35,
-        minSdk    : 21
+            compileSdk: 35,
+            targetSdk : 35,
+            minSdk    : 21
     ]
 }
 

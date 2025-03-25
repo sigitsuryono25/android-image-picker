@@ -3,6 +3,7 @@ package com.surelabs.imagepicker.features
 import android.content.ContentResolver
 import android.database.ContentObserver
 import android.os.Handler
+import android.os.Looper
 import android.provider.MediaStore
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
@@ -28,7 +29,7 @@ class ContentObserverTrigger(
 
     private fun onCreate() {
         if (handler == null) {
-            handler = Handler()
+            handler = Handler(Looper.getMainLooper())
         }
 
         observer = object : ContentObserver(handler) {

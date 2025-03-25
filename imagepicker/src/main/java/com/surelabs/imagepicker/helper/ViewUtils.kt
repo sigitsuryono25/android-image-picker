@@ -26,6 +26,7 @@ object ViewUtils {
         return ContextCompat.getDrawable(context.applicationContext, backResourceId)
     }
 
+    @Suppress("DEPRECATION")
     fun FragmentActivity.setInsets(root: View) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.VANILLA_ICE_CREAM) {
             root.setOnApplyWindowInsetsListener { view, windowInsets ->

@@ -27,6 +27,7 @@ class ImagePickerCameraOnly {
         activity.startActivityForResult(getIntent(activity), requestCode)
     }
 
+    @Suppress("DEPRECATION")
     @JvmOverloads
     fun start(fragment: Fragment, requestCode: Int = IpCons.RC_IMAGE_PICKER) {
         fragment.startActivityForResult(getIntent(fragment.activity), requestCode)
